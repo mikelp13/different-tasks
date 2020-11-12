@@ -22,3 +22,4 @@ const arrOfNames = [vasya, petya, masha];
 
  console.log(arrOfNames);
  console.log(newArray);
+
