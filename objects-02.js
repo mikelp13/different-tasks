@@ -1,47 +1,47 @@
 // Объекты
 // ==============================================================================
-const products = [
-  {
-    id: '1',
-    name: 'milk',
-    value: 'Молоко',
-    price: 20,
-    sale: true,
-    quantity: 10,
-  },
-  {
-    id: '2',
-    name: 'water',
-    value: 'Вода',
-    price: 10,
-    sale: false,
-    quantity: 50,
-  },
-  {
-    id: '3',
-    name: 'juice',
-    value: 'Сок',
-    price: 34,
-    sale: true,
-    quantity: 24,
-  },
-  {
-    id: '4',
-    name: 'fruitDrink',
-    value: 'Морс',
-    price: 32,
-    sale: true,
-    quantity: 25,
-  },
-  {
-    id: '5',
-    name: 'milkShake',
-    value: 'Молочный коктейль',
-    price: 37,
-    sale: false,
-    quantity: 37,
-  },
-];
+// const products = [
+//   {
+//     id: '1',
+//     name: 'milk',
+//     value: 'Молоко',
+//     price: 20,
+//     sale: true,
+//     quantity: 10,
+//   },
+//   {
+//     id: '2',
+//     name: 'water',
+//     value: 'Вода',
+//     price: 10,
+//     sale: false,
+//     quantity: 50,
+//   },
+//   {
+//     id: '3',
+//     name: 'juice',
+//     value: 'Сок',
+//     price: 34,
+//     sale: true,
+//     quantity: 24,
+//   },
+//   {
+//     id: '4',
+//     name: 'fruitDrink',
+//     value: 'Морс',
+//     price: 32,
+//     sale: true,
+//     quantity: 25,
+//   },
+//   {
+//     id: '5',
+//     name: 'milkShake',
+//     value: 'Молочный коктейль',
+//     price: 37,
+//     sale: false,
+//     quantity: 37,
+//   },
+// ];
 
 //================================ Задача 1 ===============================================
 // 1. Создайте функцию getSaleProducts(), которая вернет новый массив со свойством sale равным true.
@@ -170,13 +170,24 @@ const products = [
 // 8. Создайте функцию editProduct(), которая будет изменять объект products. 
 // В качестве аргументов, в функцию будут передаваться id, а также ключ и его значение, которое нужно перезаписать.
 
-// const editProduct = (id, key, value) => {
+// const editProduct = (array, id, key, value) => {
 
+// for (const item of array) {
+
+// const {name} = products;
+
+//   if (item.id === id) {
+
+//     item[key] = value;
+
+//   }
+// }
+// return products;
 // }
 
-// editProduct(products,);
+// console.log(editProduct(products, '5', 'name', 'milkPleasure'));
 
-// ========================================================================================
+// // ========================================================================================
 
 //================================ Задача 9 ===============================================
 // 9. Создайте функцию modifyProductList(), которая будет возвращать новый массив с продуктами
@@ -195,5 +206,17 @@ const products = [
 
 //================================ Задача 10 ===============================================
 // 10. Создайте функцию addToCart(), которая будет записывать товар по id в новый массив cart.
+
+// const addToCart =  function (array, id) {
+// const cart =[];
+// for (const item of array) {
+//   if(item.id === id) {
+//     cart.push(item);
+//   }
+// }
+// return cart;
+// }
+
+// console.log(addToCart(products, '5'));
 
 // ========================================================================================
