@@ -11,37 +11,37 @@ sum() must return the sum of all array values
 even() must return an array of all even numbers
 odd() must return an array of all odd numbers
 Note: the original array must not be changed in any case!*/
-const numbers = [1, 2, 3, 4, 5];
+// const numbers = [1, 2, 3, 4, 5];
 
-Array.prototype.square = function(numbers){
-  return this.map(num => Math.pow(num, 2));
-};
+// Array.prototype.square = function(numbers){
+//   return this.map(num => Math.pow(num, 2));
+// };
 
-Array.prototype.cube = function(numbers) {
-  return this.map(num => Math.pow(num, 3));
-};
+// Array.prototype.cube = function(numbers) {
+//   return this.map(num => Math.pow(num, 3));
+// };
 
-Array.prototype.average = function(numbers) {
-  let sum = this.reduce((acc, num) => {
-    acc += num;
-    return acc;
-  }, 0);
+// Array.prototype.average = function(numbers) {
+//   let sum = this.reduce((acc, num) => {
+//     acc += num;
+//     return acc;
+//   }, 0);
 
-  return sum / this.length;
-};
+//   return sum / this.length;
+// };
 
-Array.prototype.sum = function(numbers){
-  return this.reduce((acc, num) => {
-    acc += num;
-    return acc;
-  }, 0);
-};
+// Array.prototype.sum = function(numbers){
+//   return this.reduce((acc, num) => {
+//     acc += num;
+//     return acc;
+//   }, 0);
+// };
 
-Array.prototype.even = function(numbers)  {
-  return this.filter(num => num % 2 === 0);
-};
+// Array.prototype.even = function(numbers)  {
+//   return this.filter(num => num % 2 === 0);
+// };
 
-Array.prototype.odd = function(numbers) {
-  return this.filter(num => num % 2);
-};
+// Array.prototype.odd = function(numbers) {
+//   return this.filter(num => num % 2);
+// };
  // ========================================================================================

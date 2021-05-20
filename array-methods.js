@@ -231,3 +231,76 @@
 // const productsListRef = document.querySelector('.products')
 // productsListRef.insertAdjacentHTML('afterbegin', markup(cart));
 // =======================================
+
+
+//******************  Delete dublicates ****************** 
+
+// const colors = ['blue','green','green','black','orange','blue','green','red'];
+
+// // ======================= method 1 ============
+// // const uniqueColors = colors.reduce((acc, color) => {
+// //  if (acc.indexOf (color) === -1) {
+// //         acc.push(color);
+// //       }
+// //       return acc
+// // },[] )
+
+// // ======================= method 2 ============
+
+// // const uniqueColors = colors.reduce((acc, color) => {
+// //   if (!acc.includes(color)) {
+// //          acc.push(color);
+// //        }
+// //        return acc
+// //  },[] )
+ 
+// //========================== method 3 ==============
+// const uniqueColors = Array.from(new Set(colors));
+
+//  console.log(uniqueColors);
+
+//=======================================================
+// const arr = [1, 8, 1, 5, 9, 5, 8];
+//1st method
+// function unique(arr) {
+//   const uniqueArr = [];
+//   for (const item of arr) {
+//     if (uniqueArr.indexOf(item) === -1) {
+//       uniqueArr.push(item);
+//     }
+//   }
+//   return uniqueArr;
+// }
+// console.log(unique(arr));
+
+//2st method
+// function unique(arr) {
+//   const uniqueArr = [];
+//   for (const item of arr) {
+//     if (!uniqueArr.includes(item)) {
+//       uniqueArr.push(item);
+//     }
+//   }
+//   return uniqueArr;
+// }
+// console.log(unique(arr));
+
+//3st method
+// function unique(arr) {
+// const uniqueArr = [...new Set(arr)]
+//   return uniqueArr;
+// }
+// console.log(unique(arr));
+
+//4st method
+// function unique(arr) {
+//  return arr.filter((item, index)=> arr.indexOf(item) === index)
+//   }
+
+//   console.log(unique(arr));
+
+// ************************** replace item in Array **********************
+// function replaceItems(arr, item, replaceItem) {
+//   return arr.map(num => (num === item ? replaceItem : num));
+// }
+// console.log(replaceItems([1, 2, 3, 4, 2], 2, 'a'));

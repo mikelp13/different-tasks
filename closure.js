@@ -21,13 +21,10 @@
 //   };
 // };
 
-
 // const addOne = createIncrementator(1);
 // console.log(addOne(10)); // num = 10, console result = 11
 
-
 //===========================================================================================================
-
 
 // const makeShef = function (name) {
 //   console.log(name);
@@ -42,3 +39,23 @@
 
 // mike('meatballs');
 // rob('soup');
+
+// ===========================================================================================
+
+// const makeCounter = function () {
+//   let currentCount = 0;
+
+//   const incrementCount = () => {
+//    return currentCount += 1;
+//   };
+
+//   const getCurrentCount = () => {
+//     return currentCount;
+//   };
+//   return { incrementCount, getCurrentCount };
+// };
+
+// const counterInstance = makeCounter();
+
+// counterInstance.incrementCount()// 1
+// counterInstance.incrementCount()// 2
